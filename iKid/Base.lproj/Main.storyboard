@@ -26,6 +26,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyl-Eo-pcP">
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="77H-k6-1gv" kind="presentation" modalTransitionStyle="flipHorizontal" id="D9j-MY-uKl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,6 +47,46 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="EGE-fB-flK">
+            <objects>
+                <viewController id="77H-k6-1gv" customClass="ThirdViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YZO-b5-HNF"/>
+                        <viewControllerLayoutGuide type="bottom" id="WQc-Jd-h4F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Az8-ry-TsD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bw-ex-PC4">
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="77H-k6-1gv" eventType="touchUpInside" id="8cj-vM-A2i"/>
+                                    <action selector="dismiss:" destination="Vrx-wc-tgp" eventType="touchUpInside" id="v5t-hg-2At"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wz-G9-KLF">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="2bw-ex-PC4" secondAttribute="leading" id="9il-oa-z6e"/>
+                            <constraint firstItem="WQc-Jd-h4F" firstAttribute="top" secondItem="2bw-ex-PC4" secondAttribute="bottom" constant="20" id="D2i-jP-eJd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6wz-G9-KLF" secondAttribute="leading" id="VHa-pN-UPP"/>
+                            <constraint firstItem="WQc-Jd-h4F" firstAttribute="top" secondItem="6wz-G9-KLF" secondAttribute="bottom" id="cjQ-V3-mKW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6wz-G9-KLF" secondAttribute="trailing" id="tng-Ms-Ffi"/>
+                            <constraint firstItem="6wz-G9-KLF" firstAttribute="top" secondItem="YZO-b5-HNF" secondAttribute="bottom" id="vLW-uf-V2K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MqT-dh-jTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="-320"/>
+        </scene>
         <!--Dad-->
         <scene sceneID="4DN-6b-v7R">
             <objects>
@@ -56,7 +99,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad Joke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1w-kH-F5O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1w-kH-F5O">
+                                <string key="text">A proud new dad sits down to have a drink with his father. 
+
+"Well son, now that you've got a kid of your own, I think it's time to give you this" 
+
+“Dad, you don’t mean-“
+
+“Yes son, I do” 
+
+*Dad pulls out copy of 1001 Dad Jokes, 5th Edition*</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -73,9 +125,9 @@
                             <constraint firstItem="D1w-kH-F5O" firstAttribute="trailing" secondItem="Wae-lY-HZM" secondAttribute="trailingMargin" id="5PV-Ug-Pa8"/>
                             <constraint firstItem="D1w-kH-F5O" firstAttribute="leading" secondItem="Wae-lY-HZM" secondAttribute="leadingMargin" id="Z4j-8r-8Xn"/>
                             <constraint firstItem="iNz-1i-jMf" firstAttribute="top" secondItem="9VC-dj-3eI" secondAttribute="bottom" constant="8" id="huR-lk-YPU"/>
-                            <constraint firstItem="D1w-kH-F5O" firstAttribute="top" secondItem="EZ2-rU-tt2" secondAttribute="bottom" id="jPw-qh-zSp"/>
+                            <constraint firstItem="D1w-kH-F5O" firstAttribute="top" secondItem="EZ2-rU-tt2" secondAttribute="bottom" id="lDb-vM-1pt"/>
                             <constraint firstItem="9VC-dj-3eI" firstAttribute="trailing" secondItem="Wae-lY-HZM" secondAttribute="trailingMargin" id="pk5-ea-UuG"/>
-                            <constraint firstItem="iNz-1i-jMf" firstAttribute="top" secondItem="D1w-kH-F5O" secondAttribute="bottom" id="saT-K2-p1n"/>
+                            <constraint firstItem="iNz-1i-jMf" firstAttribute="top" secondItem="D1w-kH-F5O" secondAttribute="bottom" id="tPG-xc-XVg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad" image="first" id="gYB-Kk-adU"/>
@@ -96,7 +148,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-LK-LQ3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-LK-LQ3">
+                                <string key="text">“Dad… I’m honored…”, he says, tears sparkling in his eyes.
+
+“Hi honored”, replies his father.  
+
+“I’m dad”.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -121,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ia-Nx-GwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1044"/>
+            <point key="canvasLocation" x="749.60000000000002" y="1043.9280359820091"/>
         </scene>
         <!--Bad-->
         <scene sceneID="wg7-f3-ORb">
