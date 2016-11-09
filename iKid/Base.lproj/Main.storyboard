@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Joke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1s6-tM-fPK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hindsight is 20/20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1s6-tM-fPK">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,26 +66,20 @@
                                     <action selector="dismiss:" destination="Vrx-wc-tgp" eventType="touchUpInside" id="v5t-hg-2At"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wz-G9-KLF">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xb209szxtlwx" translatesAutoresizingMaskIntoConstraints="NO" id="ZSF-lB-RaB"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="2bw-ex-PC4" secondAttribute="leading" id="9il-oa-z6e"/>
+                            <constraint firstItem="ZSF-lB-RaB" firstAttribute="centerY" secondItem="Az8-ry-TsD" secondAttribute="centerY" id="CK0-pp-LQn"/>
                             <constraint firstItem="WQc-Jd-h4F" firstAttribute="top" secondItem="2bw-ex-PC4" secondAttribute="bottom" constant="20" id="D2i-jP-eJd"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="6wz-G9-KLF" secondAttribute="leading" id="VHa-pN-UPP"/>
-                            <constraint firstItem="WQc-Jd-h4F" firstAttribute="top" secondItem="6wz-G9-KLF" secondAttribute="bottom" id="cjQ-V3-mKW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6wz-G9-KLF" secondAttribute="trailing" id="tng-Ms-Ffi"/>
-                            <constraint firstItem="6wz-G9-KLF" firstAttribute="top" secondItem="YZO-b5-HNF" secondAttribute="bottom" id="vLW-uf-V2K"/>
+                            <constraint firstItem="ZSF-lB-RaB" firstAttribute="centerX" secondItem="Az8-ry-TsD" secondAttribute="centerX" id="PJP-LD-0T0"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MqT-dh-jTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="-320"/>
+            <point key="canvasLocation" x="1445.5999999999999" y="-320.68965517241384"/>
         </scene>
         <!--Dad-->
         <scene sceneID="4DN-6b-v7R">
@@ -330,5 +324,6 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="xb209szxtlwx" width="168" height="205"/>
     </resources>
 </document>
